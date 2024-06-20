@@ -81,7 +81,7 @@ public class MyRunner implements CommandLineRunner {
         Condimenti condimento5 = (Condimenti) context.getBean("condimento5");
 //        condimentiService.saveCondimenti(condimento5);
 
-
+        pizzeService.filterByPizzaNameStartsWith("c");
 
 
 

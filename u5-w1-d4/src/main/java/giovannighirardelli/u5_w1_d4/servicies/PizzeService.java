@@ -33,4 +33,9 @@ import java.util.List;
         return pizzeRepositories.findAll();
     }
 
+    public List<Pizze> filterByPizzaNameStartsWith(String partialName) {
+        return pizzeRepositories.findByPizzaNameStartingWithIgnoreCase(partialName);
+    }
+
+
 }
